@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Boldonse';
+    src: url(../fonts/Boldonse-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 29, 29);
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 50px;
+    grid-template-areas:
+        "header header"
+        "main aside";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+header {
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #111010;
+    color: rgb(205, 215, 224);
+    font-family: 'Boldonse', sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    
+}
+
+main {
+    margin-left: 100px;
+    grid-area: main;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user {
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #111010;
+    margin-bottom: 30px;
+    background-color: rgb(29, 26, 26);
+}
+
+h3 {
+    margin: 0;
+    color: rgb(169, 193, 214);
+    background-color: rgb(29, 26, 26);
+}
+
+p {
+    color: rgb(205, 215, 224);
+    margin-bottom: 20px;
+    background-color: rgb(29, 26, 26);
+}
+
+b {
+    color: #111010;
+    background-color: rgb(29, 26, 26);
+}
+
+aside {
+    background-color: #fff;
+    grid-area: aside;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 100px;
+    border-radius: 15px;
+    background-color: rgb(169, 193, 214);
+    color: #111010;
+    padding: 30px;
+}
